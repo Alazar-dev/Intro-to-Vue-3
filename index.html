@@ -23,7 +23,8 @@
             <p v-else>Out of Stock</p>
             <ul>
               <li v-for="detail in details">{{ detail }}</li>
-              <li v-for="detail in details">{{ variants }}</li>
+              <li v-for="variant in variants">{{ variant.id }}</li>
+              <li v-for='shipping in shippings'>{{ shipping }}</li>
             </ul>
           </div>
         </div>
